@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BootStepView</string>
+    <string name="add_bink_card">添加银行卡</string>
+    <string name="bink_user_name">姓名</string>
+    <string name="bink_user_code">卡号</string>
+    <string name="bink_agreement">阅读并同意《银行卡支付用户协议》</string>
+    <string name="bank_name">工商银行</string>
+    <string name="bink_type">卡类型</string>
+    <string name="user_phone">手机号</string>
+    <string name="edit_hint_phone">输入银行预留手机号</string>
+    <string name="bink_explain">身份信息严格加密,仅用于银行验证</string>
+    <string name="edit_verification_code">请输入验证码</string>
+    <string name="verification_code">获取验证码</string>
+    <string name="verification_explain">验证码已由【餐饮咖】发出</string>
+    <string name="attribute_selection_nextstep">下一步</string>
+    <string name="bt_register_submit">完成</string>
+    <string name="bank_edit_name">输入中文姓名</string>
+    <string name="bank_edit_code">输入19位银行卡号</string>
+</resources>

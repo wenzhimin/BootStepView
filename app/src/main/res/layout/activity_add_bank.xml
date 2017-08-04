@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_bink"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:navigationIcon="@mipmap/community_main_details_back"
+        app:layout_collapseMode="pin"
+        app:theme="@style/MyStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_bink_card"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.canka.bootstepview.view.ReboundScrollView
+        android:id="@+id/scrollview_add_bink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.canka.bootstepview.view.BootStepView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingBottom="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="40dp"
+                app:circular_color="@color/colorAccent"
+                app:circular_size="15dp"
+                app:default_color="@color/actionsheet_gray"
+                app:text_color="@color/colorAccent"
+                app:three_color="false"
+                app:two_color="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bink_user_name"
+                    android:textColor="@color/free_community_item_colors"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_add_bink_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/bank_edit_name"
+                    android:textCursorDrawable="@drawable/edittext_cursor_colors"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_add_bink_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bink_user_code"
+                    android:textColor="@color/free_community_item_colors"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_add_bink_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:hint="@string/bank_edit_code"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:textCursorDrawable="@drawable/edittext_cursor_colors"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_add_bink_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_clear_text"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_add_bink_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_btn_create_group_select_image_pressed"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_add_bink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/attribute_checkbox_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/bink_agreement"
+                    android:textColor="@color/free_community_item_colors"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_bink_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:text="@string/attribute_selection_nextstep"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.canka.bootstepview.view.ReboundScrollView>
+</LinearLayout>

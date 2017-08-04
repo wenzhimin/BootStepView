@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BootStepView">
+        <!--圆的颜色-->
+        <attr name="circular_color" format="color" />
+        <!--圆的大小-->
+        <attr name="circular_size" format="dimension" />
+        <!--横线的大小-->
+        <attr name="line_size" format="dimension" />
+        <!--横线的颜色-->
+        <attr name="line_color" format="color" />
+        <!--字的大小-->
+        <attr name="text_size" format="dimension" />
+        <!--字的颜色-->
+        <attr name="text_color" format="color" />
+        <!--圆圈中的字大小-->
+        <attr name="circular_text_size" format="dimension" />
+        <!--圆圈中的字颜色-->
+        <attr name="circular_text_color" format="color" />
+        <!--默认的颜色-->
+        <attr name="default_color" format="color" />
+        <!--开启不是默认颜色-->
+        <attr name="two_color" format="boolean" />
+        <!--开启不是默认颜色-->
+        <attr name="three_color" format="boolean" />
+    </declare-styleable>
+</resources>
