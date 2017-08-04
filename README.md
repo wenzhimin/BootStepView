@@ -1,5 +1,7 @@
-# BootStepView
-一个添加银行卡操作步骤自定义View,很简单<br>
+#  一个添加银行卡操作步骤自定义View,很简单<br>
+![](https://github.com/wenzhimin/BootStepView/blob/master/apk/bank1.jpg)<br>
+![](https://github.com/wenzhimin/BootStepView/blob/master/apk/bank2.jpg)<br>
+![](https://github.com/wenzhimin/BootStepView/blob/master/apk/bank3.jpg)<br>
 ## 继承View 实现自定义属性(不知道自定义属性的百度)<br>
 public BootStepView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {<br>
         super(context, attrs, defStyleAttr);<br>
